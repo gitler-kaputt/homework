@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+
+.textarea {
+  resize: vertical;
+  max-height: 150px;
+  display: block;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.label {
+  margin-bottom: 5px;
+  display: block;
+  padding: 0px;
+}
+
+.form {
+  border: 1px solid #000;
+  border-radius: 5px;
+  max-width: 250px;
+  padding: 20px;
+}
+
+.fieldset {
+  border: none;
+}
+
+.legend {
+  font-weight: 700;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+.input,
+.textarea {
+  border: 1px solid #000;
+  border-radius: 5px;
+  max-width: 200px;
+  padding: 3px 12px;
+}
