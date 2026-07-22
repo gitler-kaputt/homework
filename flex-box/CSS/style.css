@@ -1,0 +1,47 @@
+html {
+  font-family: sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.square {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+}
+
+.ul {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: underline 1px solid #000;
+}
+
+.link {
+  color: #000;
+}
+
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #a29393;
+}
+
+.number {
+  text-decoration: none;
+  color: #fc07a6;
+}
