@@ -7,19 +7,20 @@ for (let i = 1; i <= 20; i++) {
 }
 // Задача 2.
 let factorial = 1;
-let num = prompt("Введите число меньше 10", 1);
+const num = +prompt("Введите число", 1);
 for (let i = 1; i <= num; i++) {
   factorial = factorial * i;
 }
 console.log(`Факториал числа ${num} равен: ${factorial}`);
 // Задача 3.
 let board = "";
-for (let i = 0; i < 8; i++) {
-  for (let j = 0; j < 8; j++) {
+for (let i = 1; i <= 8; i++) {
+  let row = "";
+  for (let j = 1; j <= 8; j++) {
     if ((i + j) % 2 === 0) {
-      board += "#";
+      row += "#";
     } else {
-      board += " ";
+      row += " ";
     }
   }
   board += "\n";
