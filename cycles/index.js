@@ -6,8 +6,8 @@ for (let i = 1; i <= 20; i++) {
   console.log(i);
 }
 // Задача 2.
-let factorial = 1;
 const num = +prompt("Введите число", 1);
+let factorial = 1;
 for (let i = 1; i <= num; i++) {
   factorial = factorial * i;
 }
@@ -23,6 +23,6 @@ for (let i = 1; i <= 8; i++) {
       row += " ";
     }
   }
-  board += "\n";
+  board += row + "\n";
 }
 console.log(board);
