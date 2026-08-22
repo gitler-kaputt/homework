@@ -9,9 +9,9 @@ for (let i = 1; i <= 20; i++) {
 let factorial = 1;
 let num = prompt("Введите число меньше 10", 1);
 for (let i = 1; i <= num; i++) {
-  factorial *= i;
+  factorial = factorial * i;
 }
-console.log(factorial);
+console.log(`Факториал числа ${num} равен: ${factorial}`);
 // Задача 3.
 let board = "";
 for (let i = 0; i < 8; i++) {
