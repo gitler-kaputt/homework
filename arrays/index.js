@@ -38,8 +38,8 @@ function getAllAdmins(users) {
 }
 console.log(getAllAdmins(users));
 // Задание 4.
-function first(arr, n) {
-  if (n === undefiner) {
-    return arr;
-  } я ничего не понял
-}
+// function first(arr, n) {
+//   if (n === undefiner) {
+//     return arr;
+//   } я ничего не понял
+// }
