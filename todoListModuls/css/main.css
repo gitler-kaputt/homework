@@ -1,0 +1,100 @@
+:root {
+  --background-color: #333;
+  --card-background: #444444;
+  --text-color: #fff;
+  --accent-color: #630a0a;
+  --border-color: #6f6e6e;
+  --button-border: #630a0a;
+  --border-radius: 5px;
+}
+
+html {
+  font-family: sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.input {
+  color: var(--text-color);
+  width: 200px;
+  font-size: 20px;
+  background-color: var(--card-background);
+  padding: 5px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.input:focus {
+  outline: 1px solid var(--accent-color);
+}
+
+.button {
+  font-size: 20px;
+  padding: 5px 15px;
+  color: var(--text-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--button-color);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+
+.button:active {
+  opacity: 0.5;
+}
+
+.button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+}
+
+@media (any-hover: hover) {
+  .button:hover:not(:active) {
+    opacity: 0.7;
+  }
+}
+
+.todo-list {
+  width: 450px;
+}
+
+.todo-item {
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--card-background);
+}
+
+.todo-text {
+  margin-top: 7px;
+  font-size: 20px;
+}
+
+.todo-item.completed {
+  opacity: 0.7;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+}
