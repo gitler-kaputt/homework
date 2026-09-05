@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-top: 130px;
+  padding-top: 50px;
   overflow-x: clip;
 }
 
@@ -19,68 +19,131 @@
   }
 }
 
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  width: 1571px;
+@media (width > 768px) {
+  .hero__gift {
+    margin-bottom: 40px;
+    padding: 5px 10px 5px;
+    border-radius: 19px;
+    height: 90px;
+  }
+
+  .hero__gift-title-main {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+
+  .hero__gift-title-second {
+    font-weight: 400;
+    font-size: 18px;
+    color: #eae9e9;
+  }
+
+  .hero__top-promotions-title {
+    font-size: 72px;
+    line-height: 117%;
+    color: var(--main-color);
+  }
+
+  .hero__top-promotions-list {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 159%;
+  }
+
+  .hero__top-promotions-button-download {
+    width: 378px;
+    height: 106px;
+  }
 }
 
-.header__logo {
-  justify-content: flex-start;
+@media (width < 768px) {
+  .hero__gift {
+    width: 100%;
+    height: 130px;
+    padding-left: 40px;
+    flex-direction: row-reverse;
+  }
+
+  .hero__gift-img {
+    align-items: flex-end;
+    width: 60px;
+    height: 60px;
+  }
+
+  .hero__gift-title {
+    flex-direction: column;
+  }
+
+  .hero__gift-timer {
+    padding-bottom: 10px;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: -0.08em;
+    order: -1;
+  }
+
+  .hero__gift-title-main {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+
+  .hero__gift-title-second {
+    font-weight: 300;
+    font-size: 18px;
+    color: #eae9e9;
+  }
+
+  .hero__top-promotions-title {
+    font-size: 60px;
+    line-height: 117%;
+    justify-content: center;
+  }
+
+  .hero__top-promotions-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__top-promotions-list {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 159%;
+  }
+
+  .hero__top-promotions-button-download {
+    width: 109px;
+    height: 31px;
+  }
 }
 
-.hero__gift {
-  display: flex;
-  justify-content: flex-start;
-  gap: 5px;
-  margin-bottom: 40px;
-  align-items: center;
-  padding: 5px 10px 5px;
-  border-radius: 19px;
-  width: 1571px;
-  height: 90px;
-  background: #ffffff27;
+.hero__top-promotions-title {
+  font-weight: 700;
 }
 
 .hero__gift-img {
   margin-right: 10px;
-  width: 70px;
-  height: 70px;
   transform: rotate(-5deg);
   font-weight: 400;
   font-size: 105px;
 }
 
-.hero__gift-title-main {
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 5px;
-  color: #fff;
+.hero__gift-title {
+  display: flex;
 }
 
-.hero__gift-title-second {
-  font-weight: 400;
-  font-size: 18px;
-  margin-right: 70px;
-  color: #eae9e9;
+.hero__gift-title-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.hero__gift-timer {
-  justify-content: flex-end;
-  font-weight: 400;
-  font-size: 25px;
-  letter-spacing: -0.08em;
-  color: #fff;
-}
-
-.hero__top-promotions-title {
-  font-weight: 700;
-  font-size: 72px;
-  line-height: 117%;
-  background: linear-gradient(132deg, var(--main-color) 0%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.hero__top-promotions-header {
+  display: flex;
+  flex-direction: column;
 }
 
 .top,
@@ -107,31 +170,33 @@
 }
 
 .hero__top-promotions-item {
-  font-weight: 300;
-  font-size: 30px;
-  line-height: 159%;
   color: var(--main-color);
 }
 
+.hero__top-promotions-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__top-promotions-controls {
+  display: flex;
+}
+
 .hero__top-promotions-button-wrapper {
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 380px;
 }
 
 .hero__top-promotions-overlay-icon {
   position: absolute;
-  top: -5px;
-  left: 85%;
   z-index: var(--layer-2);
-  transform: translateX(-50%);
   pointer-events: none;
   transition: opacity var(--transition-time);
 }
 
 .hero__top-promotions-button-download {
   font-family: var(--font-family);
-  width: 378px;
-  height: 106px;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -161,32 +226,30 @@
 }
 
 .hero__top-promotions-users-wrapper {
-  position: relative;
-  display: inline-block;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--main-color);
 }
 
-.hero__top-promotions-users-title {
+.hero__position {
   position: absolute;
 }
 
-.hero__top-promotions-users-title {
-  position: absolute;
-  left: 50px;
-}
-
-.hero__top-promotions-wooden-hand-wrapper {
-  position: absolute;
-  top: 200px;
-  right: 350px;
-}
-
-.hero__top-promotions-img-wooden-hand::after {
-  position: absolute;
+.hero__top-promotions-wooden-hand-wrapper::before {
   content: "";
-  width: 300px;
-  height: 300px;
+  position: absolute;
+  width: 600px;
+  height: 600px;
   border-radius: 100%;
-  background-color: linear-gradient(180deg, #98c269 0%, #9edfb600 100%);
+  background: conic-gradient(from 180deg, #98c269 0deg, #9edfb600 360deg);
+  filter: blur(300px);
   z-index: var(--layer-negative);
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.hero__top-promotions-img-wooden-hand {
+  position: absolute;
 }

@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 100px;
+  gap: 70px;
 }
 
 .header__menu-link {
@@ -23,7 +23,7 @@
   position: relative;
 }
 
-.menu__link-emoji:hover::after {
+.header__menu-item:hover::after {
   content: "✨";
   position: absolute;
   right: -25px;

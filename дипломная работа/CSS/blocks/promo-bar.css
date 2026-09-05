@@ -1,0 +1,20 @@
+.promo__bar-container {
+  display: flex;
+  align-items: center;
+  padding-block: 20px;
+  padding-left: 5px;
+  gap: 20px;
+  background: linear-gradient(90.06deg, rgba(255, 255, 255, 0.07) 2.95%);
+  border-radius: 19px;
+  height: 105px;
+}
+
+.promo__bar-timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 3;
+  font-weight: 400;
+  font-size: 30px;
+  letter-spacing: -0.08em;
+}

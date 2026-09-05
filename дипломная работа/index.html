@@ -10,13 +10,23 @@
   <body class="page__body">
     <header class="header">
       <div class="container header__container">
+        <button class="header__burger burger">
+          <svg width="28" height="28">
+            <use href="./icons/burger.svg">
+            <use href="./icons/sprite.svg#cross">
+          </svg>
+        </button>
         <a class="logo header__logo" href="/">
           <img class="header__logo-img" src="./icons/logo-icon.svg" width="163" height="66" alt="Логотип Leader Classic">
         </a>
         <div class="lang-selector">
-    <img class="flag" src="./icons/lang.svg" alt="Флаг России">
-  <span class="code">RU</span>
-  <span class="arrow">▼</span>
+    <img class="flag" src="./icons/lang.svg" width="30" height="30" alt="Флаг России">
+  <select class="header__language-list" name="language">
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+            <option value="de">DE</option>
+            <option value="zh">中文</option>
+          </select>
 </div>
         <nav id="header__menu" class="menu header__menu" aria-label="Главное меню">
           <ul class="header__menu-list">
@@ -27,7 +37,7 @@
               <li class="header__menu-item">
               <a class="header__menu-link" href="#referral-program">Реферальная</a></li>
               <li class="header__menu-item">
-              <a class="header__menu-link menu__link-emoji" href="#contacts">Контакты</a></li>
+              <a class="header__menu-link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
         <div class="header__controls">
@@ -36,25 +46,25 @@
         </div>
       </div>
     </header>
-  <main class="main">
-    <section class="hero">
-      <div class="hero__container">
-        <header class="hero__header">
-          <div class="hero__gift">
-            <img class="hero__gift-img" src="./images/gift.png" weight="50" height="50" alt="Подарок">
-            <div class="hero__gift-title">
-            <h3 class="hero__gift-title-main">Станьте миллионером с Leader Classic</h3>
-            <p class="hero__gift-title-second">Откройте счет, инвестируйте в фонды Leader Classic и получите шанс выиграть один из 100 000 000 ₽</p>
+    <section class="promo__bar">
+      <div class="container promo__bar-container">
+            <img class="promo__bar-gift-img" src="./images/gift.png" weight="50" height="50" alt="Подарок">
+              <div class="promo__bar-title-wrapper">
+            <h3 class="promo__bar-title-main">Станьте миллионером с Leader Classic</h3>
+            <p class="promo__bar-title-second">Откройте счет, инвестируйте в фонды Leader Classic и получите шанс выиграть один из 100 000 000 ₽</p>
             </div>
-            <div id="timer" class="hero__gift-timer">
-  <span class="hero__gift-time-item">27</span> д : 
-  <span class="hero__gift-time-item">07</span> ч : 
-  <span class="hero__gift-time-item">40</span> м : 
-  <span class="hero__gift-time-item">49</span> с
+            <div id="timer" class="promo__bar-timer">
+  <span class="promo__bar-time-item">27</span> д : 
+  <span class="promo__bar-time-item">07</span> ч : 
+  <span class="promo__bar-time-item">40</span> м : 
+  <span class="promo__bar-time-item">49</span> с
 </div>
-          </div>
-        </header>
-        <div class="hero__top-promotions">
+</div>
+          </section>
+        <main>
+          <section class="hero">
+        <div class="container hero__top-promotions">
+          <header class="hero__top-promotions-header">
           <h1 class="hero__top-promotions-title"><span class="top">ТОП-5 акций</span><span class="middle">с доходностью до 10-30%</span><span class="bottom">уже в 2022 году</span></h1>
           <div class="hero__top-promotions-arrow-wrapper">
             <img class="hero__top-promotions-arrow" src="./icons/arrow-down.svg" width="42" height="156" alt="Изогнутая стрелка вниз">
@@ -64,6 +74,8 @@
             <li class="hero__top-promotions-item">Поддержка в чате 24/7</li>
           </ul>
           </div>
+          </header>
+          <footer class="hero__top-promotions-footer">
           <div class="hero__top-promotions-controls">
             <div class="hero__top-promotions-button-wrapper">
               <img class="hero__top-promotions-overlay-icon" src="./icons/check-list.svg" width="120px" height="100px" alt="Чек лист топ акций">
@@ -73,11 +85,16 @@
           </div>
           <div class="hero__top-promotions-users-wrapper">
           <img class="hero__top-promotions-users-img" src="./icons/users.svg" width="152" height="70" alt="Около 100000 пользователей">
-          <p hero__top-promotions-users-title><span class="top">Сейчас инвестируют</span><span class="bottom">100 000+ пользователй</span></p>
+          <p class="hero__top-promotions-users-title"><span class="top">Сейчас инвестируют</span><span class="bottom">100 000+ пользователй</span></p>
           </div>
-        </div>
+          </footer>
         <div class="hero__top-promotions-wooden-hand-wrapper">
-        <img class=".hero__top-promotions-img-wooden-hand" src="./images/Wooden-Hand-iPhone-12-Pro.png" width="872px" height="1149px" alt="Деревянная рука держит телефон"></div>
+          <picture>
+        <img class="hero__top-promotions-img-wooden-hand" src="./images/Wooden-Hand-iPhone-12-Pro.png" width="872px" height="1149px" alt="Деревянная рука держит телефон">
+      </picture>
+    </div>
+        </div>
+        </main>
         </div>
     </section>
   </main>
