@@ -17,6 +17,7 @@
   );
   --border-color: #e49031;
   --secondary-color: linear-gradient(180deg, #65cb7c 0%, #466951 100%);
+  --shadow-color: #080808;
 
   /* button accent */
   --button-accent-shadow:
@@ -30,7 +31,7 @@
   );
 
   /* container */
-  --container-width: 1571px;
+  --container-width: 1240px;
   --container-padding: 15px;
 
   /* transitions */

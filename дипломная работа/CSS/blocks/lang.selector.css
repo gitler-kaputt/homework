@@ -5,12 +5,26 @@
 .lang-selector {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
+  flex-shrink: 0;
+  gap: 3px;
+  padding: 6px 10px;
   background: var(--bg-color);
   color: #d4d4d4;
   border-radius: 4px;
   cursor: pointer;
   font-family: var(--font-family);
   font-size: 12px;
+}
+
+@media (width > 1040px) {
+  .lang-selector {
+    margin-right: 30px;
+  }
+}
+
+.header__language-list {
+  font-size: 18px;
+  border: none;
+  background-color: var(--bg-color);
+  color: var(--main-color);
 }

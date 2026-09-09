@@ -1,13 +1,19 @@
+@media (width > 992px) {
+  .header__menu-wrapper {
+    flex-grow: 1;
+    align-items: center;
+  }
+}
+
 .header__menu-list {
   font-family: var(--font-family);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  margin-right: 20px;
 }
 
 .header__menu-link {
-  font-weight: 300;
   font-size: 18px;
   line-height: 130%;
   color: var(--main-color);

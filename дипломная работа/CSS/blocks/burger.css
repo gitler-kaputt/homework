@@ -1,5 +1,29 @@
-@media (width > 768px) {
+.header__burger {
+  display: flex;
+  align-items: center;
+}
+
+@media (width > 992px) {
+  .header__burger {
+    display: none;
+  }
+}
+
+@media (width <= 992px) {
   .burger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--layer-3);
+  }
+
+  .burger__icon-burger,
+  .burger--open .burger__icon-cross {
+    display: block;
+  }
+
+  .burger__icon-cross,
+  .burger--open .burger__icon-burger {
     display: none;
   }
 }

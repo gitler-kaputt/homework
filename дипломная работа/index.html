@@ -6,20 +6,22 @@
     <title>graduate project</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="shortcut icon" href="./icons/LC-fivicon-52x66.ico" type="image/x-icon">
+    <script defer src="./js/index.js" type="module"></script>
   </head>
   <body class="page__body">
     <header class="header">
       <div class="container header__container">
-        <button class="header__burger burger">
-          <svg width="28" height="28">
-            <use href="./icons/burger.svg">
-            <use href="./icons/sprite.svg#cross">
+        <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="header__menu">
+          <svg width="24" height="24">
+            <use class="burger__icon-burger" href="./icons/burger.svg"></use>
+            <use class="burger__icon-cross" href="./icons/sprite.svg#cross"></use>
           </svg>
         </button>
         <a class="logo header__logo" href="/">
           <img class="header__logo-img" src="./icons/logo-icon.svg" width="163" height="66" alt="Логотип Leader Classic">
         </a>
-        <div class="lang-selector">
+        <div class="header__menu-wrapper">
+          <div class="lang-selector">
     <img class="flag" src="./icons/lang.svg" width="30" height="30" alt="Флаг России">
   <select class="header__language-list" name="language">
             <option value="ru">RU</option>
@@ -40,9 +42,10 @@
               <a class="header__menu-link" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
+        </div>
         <div class="header__controls">
-          <button class="header__actions-button-log">Войти</button>
-          <button class="header__actions-button-open">Открыть счёт</и>
+          <button class="actions__button-black">Войти</button>
+          <button class="actions__button-orange">Открыть счёт</и>
         </div>
       </div>
     </header>

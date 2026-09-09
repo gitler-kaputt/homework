@@ -69,22 +69,18 @@ input:focus {
   font-size: 18px;
 }
 
-@media (width > 576px) {
-  .section {
-    padding-bottom: 140px;
-  }
-
-  .section-title {
-    margin-bottom: 40px;
-  }
+.actions__button-black {
+  font-family: var(--font-family);
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
 }
 
-@media (width <= 576px) {
-  .section {
-    padding-bottom: 80px;
-  }
-
-  .section-title {
-    margin-bottom: 30px;
-  }
+.actions__button-orange {
+  font-family: var(--font-family);
+  border-radius: 20px;
+  color: #000;
+  box-shadow: var(--button-accent-shadow);
+  background: var(--button-accent-color);
+  transition: opacity var(--transition-time);
 }
