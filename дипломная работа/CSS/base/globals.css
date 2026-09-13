@@ -71,14 +71,20 @@ input:focus {
 
 .actions__button-black {
   font-family: var(--font-family);
+  font-weight: 400;
   color: #fff;
   border: 1px solid var(--border-color);
 }
 
 .actions__button-orange {
   font-family: var(--font-family);
+  font-weight: 700;
   color: #000;
   box-shadow: var(--button-accent-shadow);
   background: var(--button-accent-color);
   transition: opacity var(--transition-time);
+}
+
+.actions__button-orange:active {
+  opacity: 0.5;
 }

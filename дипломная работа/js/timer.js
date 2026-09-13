@@ -1,23 +1,15 @@
-const deadline = new Date("2025-08-27 15:30:00");
+export const countDownDate = new Date("Oct 11, 2026 03:00:00").getTime();
 
-// Функция для расчёта времени
-function formatTime(days, hours, minutes, seconds) {
-  return `${days} д : ${hours} ч : ${minutes} м : {seconds} с`;
-}
+let timerId = setInterval(function () {
+  const now = new Date().getTime();
 
-// Функция, которая будет вызываться каждую секунду
-function updateTimer() {
-  const now = new Date();
-  const distance = deadline - now;
-
+  const distance = countDownDate - now;
   if (distance < 0) {
-    // Отсчёт завершён
-    clearInterval(timerInterval);
-    document.getElementById("timer").innerHTML = "Время вышло!";
+    clearInterval(timerId);
+    document.getElementById("timer").innerHTML = "ИСТЁК";
     return;
   }
 
-  // Рассчитываем дни, часы, минуты и секунды
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor(
     (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
@@ -25,36 +17,16 @@ function updateTimer() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Обновляем содержимое элемента
-  document.getElementById("timer").innerHTML = formatTime(
-    days,
-    hours,
-    minutes,
-    seconds,
-  );
-}
+  const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
+  const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
 
-// Запускаем таймер
-let timerInterval = setInterval(updateTimer, 1000);
-
-// const totalSeconds = 27 * 24 * 3600 + 7 * 3600 + 40 * 60 + 49; // переводим всё в секунды
-
-// let remaining = totalSeconds;
-
-// function formatTime(seconds) {
-//   const days = Math.floor(seconds / (24 * 3600));
-//   const hours = Math.floor((seconds % (24 * 3600)) / 3600);
-//   const minutes = Math.floor((seconds % 3600) / 60);
-//   const secs = Math.floor(seconds % 60);
-
-//   return `${days} д : ${hours} ч : ${minutes} м : ${secs} с`;
-// }
-
-// const interval = setInterval(() => {
-//   process.stdout.write("\r" + formatTime(remaining));
-//   remaining--;
-//   if (remaining < 0) {
-//     clearInterval(interval);
-//     console.log("\nВремя вышло!");
-//   }
-// }, 1000);
+  document.getElementById("timer").innerHTML =
+    days +
+    " д : " +
+    hours +
+    " ч : " +
+    formattedMinutes +
+    " м : " +
+    formattedSeconds +
+    " с";
+}, 1000);
