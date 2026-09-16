@@ -8,5 +8,6 @@
 @import "./blocks/burger.css";
 @import "./blocks/menu.css";
 @import "./blocks/lang.selector.css";
-@import "./blocks/hero.css";
 @import "./blocks/promo-bar.css";
+@import "./blocks/hero.css";
+@import "./blocks/money-abilities.css";

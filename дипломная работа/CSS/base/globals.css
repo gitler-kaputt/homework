@@ -50,23 +50,41 @@ input:focus {
 .title-xs,
 .title-sm,
 .title-md {
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
   color: var(--main-color);
 }
 
 .title-md {
-  /* min-width 375px, max-width 992x */
-  font-size: clamp(32px, 0.936rem + 4.54vw, 60px);
+  /* min-width 375px, max-width 1920x */
+  font-size: clamp(1.25rem, 0.795rem + 1.94vw, 3.125rem);
 }
 
-.title-sm {
-  /* min-width 375px, max-width 768x */
+/* .title-sm {
+  min-width 375px, max-width 768x
   font-size: clamp(24px, 1.023rem + 2.04vw, 32px);
-}
+} */
 
 .title-xs {
   font-size: 18px;
+}
+
+.subtitle {
+  font-weight: 400;
+  line-height: 158%;
+  font-size: clamp(0.75rem, 0.553rem + 0.84vw, 1.563rem);
+  max-width: clamp(18.75rem, 13.441rem + 22.65vw, 40.625rem);
+  color: var(--main-color);
+  text-align: center;
+}
+
+.subtitle--accent {
+  font-weight: 700;
+}
+
+.line-break-after::after {
+  content: "";
+  display: block;
 }
 
 .actions__button-black {

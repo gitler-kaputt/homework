@@ -1,0 +1,132 @@
+.money__abilities-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: clamp(1.875rem, 0.813rem + 4.53vw, 6.25rem);
+}
+
+@media (width > 992px) {
+  .money__abilities-container {
+    margin-top: 40px;
+  }
+}
+
+@media (width <= 1580px) {
+  .money__abilities-container {
+    margin-top: 750px;
+  }
+}
+
+@media (width <= 992px) {
+  .money__abilities-container {
+    margin-top: 530px;
+  }
+}
+
+@media (width <= 576px) {
+  .money__abilities-container {
+    margin-top: 350px;
+  }
+}
+
+.money__abilities-title {
+  margin-bottom: 20px;
+}
+
+.money__abilities-markets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.625rem, -0.133rem + 3.24vw, 3.75rem);
+}
+
+.money__abilities-market {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  width: clamp(5rem, 4.029rem + 4.14vw, 9rem);
+  height: clamp(5rem, 4.029rem + 4.14vw, 9rem);
+  border-radius: 24px;
+  padding: 20px;
+}
+
+@media (width <= 992px) {
+  .money__abilities-markets {
+    display: none;
+  }
+}
+
+.market-icon {
+  max-width: 100%;
+  height: auto;
+}
+
+.percentage-investment {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: var(--secondary-accent-color);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.income-investment {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 130%;
+  color: var(--main-color);
+  background: #262626;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.card-up {
+  transform: translateY(-20px);
+}
+
+.card-down {
+  transform: translateY(20px);
+}
+
+.money__abilities-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.money__abilities-slider-wrapper {
+  border: 2px solid var(--secondary-accent-color);
+  border-radius: 12px;
+  box-shadow:
+    0 0 30px 5px var(--secondary-accent-glow-color),
+    inset 0 0 30px 5px var(--secondary-accent-glow-color);
+  padding-block: 46px;
+  max-width: clamp(12.5rem, 4.903rem + 32.41vw, 25rem);
+}
+
+@media (width > 992px) {
+  .money__abilities-slider-wrapper {
+    display: none;
+  }
+}
+
+.money-abilities-slide-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.actions__button-catalog {
+  border-radius: 4px;
+}

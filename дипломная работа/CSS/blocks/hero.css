@@ -103,6 +103,7 @@
   .hero__top-promotions-button-open {
     padding-block: 25px;
     padding-inline: 100px;
+    border-radius: 20px;
   }
 }
 
@@ -165,6 +166,7 @@
   .hero__top-promotions-button-open {
     padding-block: 20px;
     padding-inline: 63px;
+    border-radius: 20px;
   }
 }
 
@@ -319,11 +321,8 @@
 .hero__top-promotions-wooden-hand-wrapper::before {
   content: "";
   position: absolute;
-  width: 600px;
-  height: 600px;
   border-radius: 100%;
   background: conic-gradient(from 180deg, #98c269 0deg, #9edfb600 360deg);
-  filter: blur(300px);
   z-index: var(--layer-negative);
   display: block;
   unicode-bidi: isolate;
@@ -332,7 +331,6 @@
 .hero__top-promotions-wooden-hand-wrapper {
   display: flex;
   position: absolute;
-  z-index: var(--layer-negative);
 }
 
 @media (width > 1240px) {
@@ -343,81 +341,28 @@
 }
 
 @media (width <= 2380px) {
+  .hero__top-promotions-wooden-hand-wrapper::before {
+    width: 600px;
+    height: 600px;
+    filter: blur(300px);
+  }
+
   .hero__top-promotions-wooden-hand-wrapper {
     top: -100px;
-    right: 50px;
+    right: -15%;
   }
 }
 
-@media (width <= 2220px) {
-  .hero__top-promotions-wooden-hand-wrapper {
-    top: -100px;
-    right: -50px;
-  }
-}
-
-@media (width <= 2000px) {
-  .hero__top-promotions-wooden-hand-wrapper {
-    top: -100px;
-    right: -100px;
-  }
-}
-
-@media (width <= 1850px) {
-  .hero__top-promotions-wooden-hand-wrapper {
-    top: -100px;
-    right: -200px;
-  }
-}
-
-@media (width <= 1660px) {
-  .hero__top-promotions-wooden-hand-wrapper {
-    top: -100px;
-    right: -300px;
-  }
-}
-
-@media (width <= 1450px) {
-  .hero__top-promotions-wooden-hand-wrapper {
-    top: -100px;
-    right: -400px;
-  }
-}
-
-@media (width <= 1300px) {
+@media (width <= 1580px) {
   .hero__top-promotions-wooden-hand-wrapper {
     top: 500px;
-    left: 400px;
-  }
-
-  .hero__top-promotions-img-wooden-hand {
-    width: 700px;
-    height: 700px;
-  }
-}
-
-@media (width <= 1200px) {
-  .hero__top-promotions-wooden-hand-wrapper {
-    left: 300px;
+    right: 10%;
   }
 }
 
 @media (width <= 992px) {
   .hero__top-promotions-wooden-hand-wrapper {
-    top: 400px;
-    left: 200px;
-  }
-
-  .hero__top-promotions-img-wooden-hand {
-    width: 700px;
-    height: 700px;
-  }
-}
-
-@media (width <= 768px) {
-  .hero__top-promotions-wooden-hand-wrapper {
-    top: 360px;
-    left: 100px;
+    top: 450px;
   }
 
   .hero__top-promotions-img-wooden-hand {
@@ -426,14 +371,25 @@
   }
 }
 
-@media (width <= 576px) {
+@media (width <= 768px) {
   .hero__top-promotions-wooden-hand-wrapper {
     top: 350px;
-    left: 100px;
+  }
+}
+
+@media (width <= 576px) {
+  .hero__top-promotions-wooden-hand-wrapper::before {
+    width: 400px;
+    height: 400px;
+    filter: blur(200px);
+  }
+
+  .hero__top-promotions-wooden-hand-wrapper {
+    top: 350px;
   }
 
   .hero__top-promotions-img-wooden-hand {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
   }
 }

@@ -1,6 +1,7 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 import { countDownDate } from "./timer.js";
+import { moneyAbilitiesSlider } from "./money-abilities-slider.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -28,6 +29,7 @@ try {
   );
 
   countDownDate();
+  moneyAbilitiesSlider();
 } catch (error) {
   console.error(error);
 }

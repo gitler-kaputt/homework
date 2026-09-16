@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>graduate project</title>
     <link rel="stylesheet" href="./CSS/index.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
     <link rel="shortcut icon" href="./icons/LC-fivicon-52x66.ico" type="image/x-icon">
     <script defer src="./js/index.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
   </head>
   <body class="page__body">
     <header class="header">
@@ -17,7 +22,7 @@
             <use class="burger__icon-cross" href="./icons/sprite.svg#cross"></use>
           </svg>
         </button>
-        <a class="logo header__logo" href="/">
+        <a class="logo header__logo" href="#">
           <img class="header__logo-img" src="./icons/logo-icon.svg" width="163" height="66" alt="Логотип Leader Classic">
         </a>
         <div class="header__menu-wrapper">
@@ -45,7 +50,7 @@
         </div>
         <div class="header__controls">
           <button class="actions__button-black actions__button-black-enter">Войти</button>
-          <button class="actions__button-orange">Открыть счёт</и>
+          <button class="actions__button-orange">Открыть счёт</button>
         </div>
       </div>
     </header>
@@ -62,8 +67,8 @@
             <div>
         </div>
     </section>
-        <main>
-        <section class="hero">
+    <main>
+    <section class="hero">
         <div class="container hero__top-promotions">
           <h1 class="hero__top-promotions-title"><span class="top">ТОП-5 акций</span><span class="middle">с доходностью до 10-30%</span><span class="bottom">уже в 2022 году</span></h1>
           <div class="hero__top-promotions-arrow-wrapper">
@@ -94,9 +99,137 @@
       </picture>
     </div>
         </div>
-        </main>
-        </div>
     </section>
-  </main>
+    </main>
+    <section>
+      <div class="container money__abilities">
+        <div class="money__abilities-container">
+          <h2 class="money__abilities-title title-md"><span class="line-break-after">Ваши деньги</span>способны на большее
+					</h2>
+          <p class="subtitle">Сколько бы вы заработали, инвестируя <strong class="subtitle--accent">100 000 ₽</strong> год назад?</p>
+        </div>
+        <div class="money__abilities-markets">
+          <div class="money__abilities-markets-wrapper card-down">
+            <img class="market-icon" src="./icons/money-abilities.icons/tesla.svg" width="100" height="100" alt="логотип тесла">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+83.97%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+            </div>
+            <div class="money__abilities-markets-wrapper card-up">
+            <img class="market-icon" src="./icons/money-abilities.icons/amazon.svg" width="100" height="100" alt="логотип амазона">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+4.11%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+          </div>
+            <div class="money__abilities-markets-wrapper card-down">
+            <img class="market-icon" src="./icons/money-abilities.icons/apple.svg" width="100" height="100" alt="логотип эпл">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+26.36%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+            </div>
+            <div class="money__abilities-markets-wrapper card-up">
+            <img class="market-icon" src="./icons/money-abilities.icons/yandex.svg" width="100" height="100" alt="логотип яндекс">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+17.19%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+            </div>
+            <div class="money__abilities-markets-wrapper card-down">
+            <img class="market-icon" src="./icons/money-abilities.icons/facebook.svg" width="100" height="100" alt="логотип фейсбука">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+31.32%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+            </div>
+            <div class="money__abilities-markets-wrapper card-up">
+            <img class="market-icon" src="./icons/money-abilities.icons/microsoft.svg" width="100" height="100" alt="логотип майкрософт">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+38.99%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+            </div>
+        </div>
+        <section class="money__abilities-slider">
+        <div class="money__abilities-slider-wrapper">
+          <div class="swiper money__abilities-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="money-abilities-slide-inner">
+                  <div class="money__abilities-markets-wrapper">
+            <img class="market-icon" src="./icons/money-abilities.icons/tesla.svg" width="100" height="100" alt="логотип тесла">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+83.97%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="money-abilities-slide-inner">
+                  <div class="money__abilities-markets-wrapper">
+            <img class="market-icon" src="./icons/money-abilities.icons/amazon.svg" width="100" height="100" alt="логотип амазона">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+4.11%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+                </div>
+              </div>
+              </div>
+            <div class="swiper-slide">
+              <div class="money-abilities-slide-inner">
+                  <div class="money__abilities-markets-wrapper">
+            <img class="market-icon" src="./icons/money-abilities.icons/apple.svg" width="100" height="100" alt="логотип эпл">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+26.36%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="money-abilities-slide-inner">
+                  <div class="money__abilities-markets-wrapper">
+            <img class="market-icon" src="./icons/money-abilities.icons/yandex.svg" width="100" height="100" alt="логотип яндекс">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+17.19%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="money-abilities-slide-inner">
+                  <div class="money__abilities-markets-wrapper">
+            <img class="market-icon" src="./icons/money-abilities.icons/facebook.svg" width="100" height="100" alt="логотип фейсбука">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+31.32%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="money-abilities-slide-inner">
+                  <div class="money__abilities-markets-wrapper">
+            <img class="market-icon" src="./icons/money-abilities.icons/microsoft.svg" width="100" height="100" alt="логотип майкрософт">
+          <div class="money__abilities-investment-wrapper">
+            <div class="percentage-investment">+38.99%</div>
+            <div class="income-investment">+72.000₽</div>
+            </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <div class="catalog__container">
+      <p class="subtitle">И еще более 10 000 других ценных бумаг доступно <strong class="subtitle--accent">в каталоге</strong></p>
+      <button class="actions__button-orange actions__button-catalog">Получить каталог</button>
+      </div>
+    </section>
   </body>
 </html>
