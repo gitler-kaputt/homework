@@ -19,6 +19,7 @@
 .tools__article-wrapper {
   display: grid;
   margin-top: 50px;
+  margin-bottom: clamp(1.875rem, 0.813rem + 4.53vw, 6.25rem);
 }
 
 @media (width > 992px) {

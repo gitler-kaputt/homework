@@ -1,8 +1,4 @@
 .money__abilities-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
   margin-bottom: clamp(1.875rem, 0.813rem + 4.53vw, 6.25rem);
 }
 
@@ -28,10 +24,6 @@
   .money__abilities-container {
     margin-top: 350px;
   }
-}
-
-.money__abilities-title {
-  margin-bottom: 20px;
 }
 
 .money__abilities-markets {

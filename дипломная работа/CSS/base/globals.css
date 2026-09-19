@@ -32,6 +32,20 @@ input:focus {
   outline: 2px solid var(--accent-color);
 }
 
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (width <= 576px) {
+  .title-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
 .text-light,
 .text-regular {
   font-size: 16px;
@@ -58,15 +72,18 @@ input:focus {
 .title-md {
   /* min-width 375px, max-width 1920x */
   font-size: clamp(1.25rem, 0.795rem + 1.94vw, 3.125rem);
+  margin-bottom: 20px;
 }
 
-/* .title-sm {
-  min-width 375px, max-width 768x
-  font-size: clamp(24px, 1.023rem + 2.04vw, 32px);
-} */
-
 .title-xs {
-  font-size: 18px;
+  line-height: 159%;
+  font-size: 20px;
+}
+
+@media (width <= 576px) {
+  .title-xs {
+    font-size: 14px;
+  }
 }
 
 .subtitle {
