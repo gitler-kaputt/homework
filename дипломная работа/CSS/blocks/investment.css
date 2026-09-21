@@ -42,7 +42,7 @@
 @media (width <= 576px) {
   .investment__article {
     background-size: 100px 100px;
-    max-width: 250px;
+    max-width: 300px;
   }
 }
 

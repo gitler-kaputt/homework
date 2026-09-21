@@ -93,6 +93,7 @@ input:focus {
   max-width: clamp(18.75rem, 13.441rem + 22.65vw, 40.625rem);
   color: var(--main-color);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .subtitle--accent {
@@ -118,6 +119,31 @@ input:focus {
   box-shadow: var(--button-accent-shadow);
   background: var(--button-accent-color);
   transition: opacity var(--transition-time);
+}
+
+@media (width > 992px) {
+  .actions__button-black,
+  .actions__button-orange {
+    font-size: 18px;
+    padding: 20px 40px;
+    border-radius: 20px;
+  }
+}
+
+@media (width <= 992px) {
+  .actions__button-black,
+  .actions__button-orange {
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+}
+
+@media (width <= 576px) {
+  .actions__button-black,
+  .actions__button-orange {
+    font-size: 10px;
+  }
 }
 
 .actions__button-orange:active {
