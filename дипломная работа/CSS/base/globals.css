@@ -100,6 +100,19 @@ input:focus {
   font-weight: 700;
 }
 
+.card-disc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 159%;
+  color: var(--main-color);
+}
+
+@media (width <= 576px) {
+  .card-disc {
+    font-size: 14px;
+  }
+}
+
 .line-break-after::after {
   content: "";
   display: block;

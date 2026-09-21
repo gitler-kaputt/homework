@@ -1,0 +1,67 @@
+.costumers-invest__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.costumers-invest__card {
+  background: var(--card-color);
+  border-radius: 12px;
+  transition: background var(--transition-time);
+}
+
+.costumers-invest__card:hover {
+  background: var(--main-color);
+}
+
+.costumers-invest__card-link {
+  display: flex;
+  flex-direction: column;
+  max-width: 378px;
+  padding-inline: 40px 40px;
+  padding-block: 39px 30px;
+  gap: 35px;
+  color: var(--main-color);
+  transition: color var(--transition-time);
+}
+
+.costumers-invest__card:hover .costumers-invest__card-link {
+  color: var(--bg-color);
+}
+
+.costumers-invest__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.costumers-invest__btn {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 15px;
+  font-weight: 400;
+  transition: opacity var(--transition-time);
+  text-align: right;
+  text-decoration: underline;
+}
+
+.costumers-invest__btn:hover {
+  opacity: 0.8;
+}
+
+.costumers-invest__btn::after {
+  content: "→";
+  text-decoration: none;
+  display: inline-block;
+  transition: transform var(--transition-time);
+}
+
+.costumers-invest__card:hover .costumers-invest__btn::after {
+  transform: translateX(10px);
+}

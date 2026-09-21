@@ -1,18 +1,19 @@
-.bonus__container {
+.bonus {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
 }
 
 @media (width > 992px) {
-  .bonus__container {
+  .bonus {
     padding-top: 200px;
+    padding-bottom: 100px;
   }
 }
 
 @media (width <= 992px) {
-  .bonus__container {
+  .bonus {
     padding-top: 100px;
+    padding-bottom: 50px;
   }
 }
 

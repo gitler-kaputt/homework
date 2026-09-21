@@ -68,13 +68,6 @@
   margin-bottom: 40px;
 }
 
-.investment__disc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 159%;
-  color: var(--main-color);
-}
-
 @media (width <= 576px) {
   .investment__title-xs {
     margin-bottom: 40px;
@@ -82,9 +75,5 @@
 
   .investment__title-xs-first {
     margin-bottom: 20px;
-  }
-
-  .investment__disc {
-    font-size: 14px;
   }
 }

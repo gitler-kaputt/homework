@@ -20,6 +20,7 @@
   --border-color: #e49031;
   --secondary-color: linear-gradient(180deg, #65cb7c 0%, #466951 100%);
   --shadow-color: #080808;
+  --card-color: #1b1b1c;
 
   /* button accent */
   --button-accent-shadow:
