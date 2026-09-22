@@ -6,11 +6,13 @@
   scroll-behavior: smooth;
   scroll-padding-top: 98px;
   scrollbar-gutter: stable;
+  overflow-x: hidden;
 }
 
 .page__body {
   min-width: 375px;
   background-color: var(--bg-color);
+  overflow-x: hidden;
 }
 
 .page-body--no-scroll {

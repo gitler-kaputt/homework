@@ -28,6 +28,7 @@
   justify-content: center;
   gap: clamp(0.625rem, -1.499rem + 9.06vw, 9.375rem);
   margin-inline: 40px;
+  margin-bottom: 50px;
 }
 
 @media (width <= 992px) {
@@ -72,6 +73,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin-bottom: 60px;
 }
 
@@ -83,6 +85,7 @@
     inset 0 0 30px 5px var(--secondary-accent-glow-color);
   padding-top: 46px;
   max-width: clamp(12.5rem, 4.903rem + 32.41vw, 25rem);
+  margin-bottom: 30px;
 }
 
 @media (width > 992px) {

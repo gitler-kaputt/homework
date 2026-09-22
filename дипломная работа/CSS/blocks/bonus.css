@@ -1,6 +1,5 @@
 .bonus {
   position: relative;
-  overflow: hidden;
 }
 
 @media (width > 992px) {
