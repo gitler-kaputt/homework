@@ -15,10 +15,14 @@
     rgb(231, 170, 25) 0%,
     rgb(203, 109, 156) 100%
   );
-  --secondary-accent-color: #4bd879;
+  --secondary-accent-color: #61bb75;
   --secondary-accent-glow-color: #4bd8794d;
   --border-color: #e49031;
-  --secondary-color: linear-gradient(180deg, #65cb7c 0%, #466951 100%);
+  --secondary-color: linear-gradient(
+    92.66deg,
+    #42594a66 7.9%,
+    #65cc7d38 101.2%
+  );
   --shadow-color: #080808;
   --card-color: #1b1b1c;
 

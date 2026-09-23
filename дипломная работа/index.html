@@ -316,7 +316,7 @@
         </div>
     </section>
     <section class="costumers-invest">
-      <div class="container costumers-invest__container">
+      <div class="container costumers-invest__container mb">
         <h2 class="costumers-invest__title title-md"><span class="line-break-after">100 000+ клиентов уже</span>инвестируют с нами</h2>
         <div class="container costumers-invest__cards-wrapper">
           <article class="costumers-invest__card">
@@ -399,6 +399,41 @@
              </a>
           </article>
         </div>
+      </div>
+    </section>
+    <section class="investment-portfolio">
+      <div class="container investment-portfolio__wrapper">
+      <div class="investment-portfolio__gauge">
+        <svg viewBox="0 0 600 600">
+          <circle class="investment-portfolio__gauge-bg" cx="300" cy="300" r="250"/>
+          <circle class="investment-portfolio__gauge-fill" cx="300" cy="300" r="250"/>
+        </svg>
+        <div class="investment-portfolio__gauge-content">
+        <span class="investment-portfolio__profitability">Доходность</span>
+        <span id="percent" class="investment-portfolio__percent">до 100%</span>
+        <span id="risk" class="investment-portfolio__risk">Низкий риск</span>
+        <input class="investment-portfolio__slider" type="range" id="slider" min="0" max="100" value="5">
+        <div class="investment-portfolio__controls">
+          <label class="investment-portfolio__radio-label">
+          <input type="radio" name="strategy" checked>
+          <span class="investment-portfolio__radio-circle"></span>
+          <span class="investment-portfolio__radio-text">Управляю деньгами сам</span>
+          </label>
+          <label class="investment-portfolio__radio-label">
+          <input type="radio" name="strategy">
+          <span class="investment-portfolio__radio-circle"></span>
+          <span class="investment-portfolio__radio-text">Доверяю управление</span>
+          </label>
+        </div>
+        </div>
+      </div>
+      <div class="investment-portfolio__container">
+        <div class="title-wrapper-aside">
+        <h2 class="investment-portfolio__title title-md">Подберите индивидуальный инвестиционный портфель</h2>
+        <p class="subtitle investment-portfolio__subtitle">Покупайте российские и иностранные акции, облигации, валюту и другие продукты в простом и удобном мобильном приложении для iOS и Android</p>
+        <button class="actions__button-orange">Получить портфель</button>
+        </div>
+      </div>
       </div>
     </section>
     </main>

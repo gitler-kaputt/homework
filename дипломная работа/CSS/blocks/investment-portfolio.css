@@ -1,0 +1,222 @@
+.investment-portfolio__wrapper {
+  display: flex;
+  gap: 100px;
+}
+
+@media (width > 1200px) {
+  .investment-portfolio__wrapper {
+    gap: 100px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-portfolio__wrapper {
+    gap: 50px;
+  }
+}
+
+@media (width <= 992px) {
+  .investment-portfolio__wrapper {
+    gap: 10px;
+  }
+}
+
+.investment-portfolio__gauge {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 1/1;
+}
+
+.investment-portfolio__gauge svg {
+  width: 100%;
+  height: auto;
+  transform: rotate(-180deg);
+}
+
+.investment-portfolio__gauge circle {
+  fill: none;
+  stroke-width: 24;
+  stroke-linecap: round;
+  stroke-dasharray: 1570.8;
+  stroke-dashoffset: 785.4;
+}
+
+.investment-portfolio__gauge-bg {
+  stroke: var(--card-color);
+}
+
+.investment-portfolio__gauge-content {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.investment-portfolio__risk {
+  background: var(--secondary-color);
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+
+@media (width > 1200px) {
+  .investment-portfolio__gauge-content {
+    top: 20%;
+  }
+
+  .investment-portfolio__container {
+    max-width: 500px;
+  }
+
+  .investment-portfolio__profitability {
+    margin-bottom: 10px;
+    font-size: 23px;
+  }
+
+  .investment-portfolio__percent {
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+
+  .investment-portfolio__risk {
+    font-size: 18px;
+  }
+
+  .investment-portfolio__slider {
+    max-width: 400px;
+    margin-block: 30px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-portfolio__gauge-content {
+    top: 25%;
+  }
+
+  .investment-portfolio__container {
+    max-width: 500px;
+  }
+
+  .investment-portfolio__profitability {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .investment-portfolio__percent {
+    margin-bottom: 15px;
+    font-size: 35px;
+  }
+
+  .investment-portfolio__risk {
+    font-size: 15px;
+  }
+
+  .investment-portfolio__slider {
+    max-width: 250px;
+    margin-block: 20px;
+  }
+}
+
+@media (width <= 992px) {
+  .investment-portfolio__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .investment-portfolio__gauge {
+    order: 2;
+  }
+
+  .title-wrapper-aside {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .investment-portfolio__container {
+    max-width: 100%;
+  }
+}
+
+@media (width <= 500px) {
+  .investment-portfolio__gauge-content {
+    top: 25%;
+  }
+
+  .investment-portfolio__profitability {
+    margin-bottom: 3px;
+    font-size: 15px;
+  }
+
+  .investment-portfolio__percent {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  .investment-portfolio__risk {
+    font-size: 10px;
+  }
+
+  .investment-portfolio__slider {
+    max-width: 250px;
+    margin-block: 10px;
+  }
+}
+
+.investment-portfolio__slider {
+  width: 100%;
+  accent-color: #61bb75;
+}
+
+.investment-portfolio__controls {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 23px;
+  gap: 16px;
+}
+
+.investment-portfolio__radio-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.investment-portfolio__radio-label input {
+  appearance: none;
+  position: absolute;
+  opacity: 0;
+}
+
+.investment-portfolio__radio-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid var(--secondary-accent-color);
+  transition: border-color var(--transition-time);
+  flex-shrink: 0;
+}
+
+.investment-portfolio__radio-text {
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--main-color);
+}
+
+.investment-portfolio__radio-label:hover .investment-portfolio__radio-circle {
+  border-color: var(--secondary-accent-color);
+}
+
+.investment-portfolio__radio-label
+  input:checked
+  + .investment-portfolio__radio-circle {
+  border: 6px solid var(--secondary-accent-color);
+  border-color: var(--secondary-accent-color);
+}
