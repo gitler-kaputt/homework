@@ -1,3 +1,10 @@
+.investment-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
 .investment-portfolio__wrapper {
   display: flex;
   gap: 100px;
@@ -219,4 +226,33 @@
   + .investment-portfolio__radio-circle {
   border: 6px solid var(--secondary-accent-color);
   border-color: var(--secondary-accent-color);
+}
+
+.investment-portfolio__list {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 90%;
+}
+
+@media (width > 1200px) {
+  .investment-portfolio__list {
+    gap: 100px;
+  }
+}
+
+@media (width <= 1200px) {
+  .investment-portfolio__list {
+    gap: 100px;
+  }
+}
+
+@media (width <= 576px) {
+  .investment-portfolio__list {
+    gap: 20px;
+  }
+}
+
+.investment-portfolio__list-title {
+  color: var(--secondary-accent-color);
 }
