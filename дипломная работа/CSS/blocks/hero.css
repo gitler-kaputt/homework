@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  overflow-x: clip;
 }
 
 @media (width > 992px) {
@@ -16,6 +15,11 @@
   .hero {
     padding-top: 10px;
   }
+}
+
+.hero__top-promotions {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__top-promotions-title,
@@ -337,6 +341,12 @@
   .hero__top-promotions-wooden-hand-wrapper {
     top: -100px;
     right: 150px;
+  }
+
+  .hero__top-promotions-wooden-hand-wrapper::before {
+    width: 600px;
+    height: 600px;
+    filter: blur(300px);
   }
 }
 

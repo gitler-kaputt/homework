@@ -182,3 +182,17 @@ input:focus {
 .actions__button-orange:active {
   opacity: 0.5;
 }
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-wrapper::before {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  background: conic-gradient(from 180deg, #98c269 0deg, #9edfb600 360deg);
+  z-index: var(--layer-negative);
+  display: block;
+  unicode-bidi: isolate;
+}

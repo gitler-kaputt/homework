@@ -1,0 +1,118 @@
+.invest-device-container {
+  display: flex;
+  align-items: center;
+  margin-top: clamp(6.25rem, 4.733rem + 6.47vw, 12.5rem);
+}
+
+@media (width <= 992px) {
+  .invest-device-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.invest-device-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.invest-device-img {
+  height: auto;
+}
+
+@media (width > 1200px) {
+  .invest-device-img {
+    width: clamp(50rem, 46.966rem + 12.94vw, 62.5rem);
+  }
+}
+
+@media (width <= 1200px) {
+  .invest-device-img {
+    width: clamp(37.5rem, 34.466rem + 12.94vw, 50rem);
+  }
+}
+
+@media (width <= 992px) {
+  .invest-device-img {
+    width: clamp(31.25rem, 29.733rem + 6.47vw, 37.5rem);
+  }
+}
+
+@media (width > 992px) {
+  .img-wrapper::before {
+    width: 400px;
+    height: 400px;
+    filter: blur(300px);
+  }
+}
+
+@media (width <= 992px) {
+  .img-wrapper::before {
+    width: 200px;
+    height: 200px;
+    filter: blur(150px);
+  }
+}
+
+.invest-device__info-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.invest-device__buttons-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.invest-device__app-download {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 50px;
+  transition: opacity var(--transition-time);
+}
+
+@media (width > 1240px) {
+  .invest-device__app-download {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+
+@media (width <= 1240px) {
+  .invest-device__app-download {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (width <= 992px) {
+  .img-wrapper {
+    order: 2;
+  }
+
+  .invest-device__info-wrapper {
+    align-items: center;
+  }
+
+  .invest-device__app-download {
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}
+
+@media (width <= 576px) {
+  .invest-device__app-download {
+    font-size: 10px;
+  }
+}
+
+.invest-device__app-download:hover {
+  opacity: 0.8;
+}
