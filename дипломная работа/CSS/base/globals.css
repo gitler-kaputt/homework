@@ -73,7 +73,6 @@ input:focus {
 .title-sm,
 .title-md {
   font-weight: 700;
-  text-transform: uppercase;
   color: var(--main-color);
 }
 
