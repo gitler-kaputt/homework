@@ -1,0 +1,150 @@
+.application__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.application__steps-wrapper {
+  position: relative;
+  display: flex;
+  margin-block: 40px 100px;
+}
+
+.application__title {
+  text-align: center;
+}
+
+@media (width > 1140px) {
+  .application__arrow-1-2 {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+  }
+
+  .application__arrow-2-3 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+  }
+}
+
+@media (width <= 1140px) {
+  .application__arrow-1-2 {
+    position: absolute;
+    top: 15%;
+    left: 13%;
+  }
+
+  .application__arrow-2-3 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+  }
+}
+
+@media (width > 992px) {
+  .application__steps-wrapper {
+    gap: 150px;
+  }
+
+  .application__arrow-1-2,
+  .application__arrow-2-3 {
+    width: clamp(6.25rem, 3.216rem + 12.94vw, 18.75rem);
+  }
+}
+
+@media (width <= 992px) {
+  .application__steps-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .application__arrow-1-2,
+  .application__arrow-2-3 {
+    display: none;
+  }
+}
+
+.application__step {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+@media (width > 992px) {
+  .application__step {
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 300px;
+  }
+
+  .step-img {
+    width: 100px;
+    height: auto;
+  }
+}
+
+@media (width <= 992px) {
+  .step-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (width <= 576px) {
+  .step-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .application__subtitle {
+    font-size: 10px;
+  }
+}
+
+.application__form-wrapper {
+  display: flex;
+  gap: 15px;
+}
+
+@media (width <= 992px) {
+  .application__form-wrapper {
+    flex-direction: column;
+  }
+
+  .application__form-input {
+    padding: 20px 40px;
+  }
+
+  .application__button-orange {
+    font-size: 18px;
+    padding: 20px 40px;
+  }
+}
+
+.application__form-input {
+  border: 3px solid var(--border-color-form);
+  border-radius: 10px;
+  background-color: var(--card-color);
+  transition: outline var(--transition-time);
+  color: var(--main-color);
+}
+
+@media (width > 992px) {
+  .application__form-input {
+    padding: 20px 10px;
+  }
+
+  .application__button-orange {
+    padding: 20px 40px;
+  }
+}
+
+.application__form-input:hover {
+  outline: 2px solid var(--secondary-accent-color);
+}
+
+.application__form-input:focus {
+  outline: 2px solid var(--secondary-accent-color);
+}

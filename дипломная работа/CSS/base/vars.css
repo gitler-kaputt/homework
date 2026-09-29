@@ -17,10 +17,10 @@
   );
   --secondary-accent-color: #61bb75;
   --secondary-accent-glow-color: #4bd8794d;
-  --border-color: #e49031;
   --secondary-color: linear-gradient(149.53deg, #6ba758 21.14%, #23503d 81.17%);
   --shadow-color: #080808;
   --card-color: #1b1b1c;
+  --border-color-form: #5f5e5e;
 
   /* button accent */
   --button-accent-shadow:
@@ -32,6 +32,7 @@
     #ffbe82 72.92%,
     #e49031 100%
   );
+  --border-color: #e49031;
 
   /* container */
   --container-width: 1240px;

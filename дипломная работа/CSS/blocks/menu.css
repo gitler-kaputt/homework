@@ -17,7 +17,7 @@
   line-height: 130%;
   color: var(--main-color);
   transition:
-    background-image var(--transition-time),
+    background var(--transition-time),
     -webkit-background-clip var(--transition-time),
     background-clip var(--transition-time),
     -webkit-text-fill-color var(--transition-time),
@@ -36,7 +36,7 @@
 
 @media (any-hover: hover) {
   .header__menu-item:hover {
-    background-image: var(--accent-color);
+    background: var(--accent-color);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;

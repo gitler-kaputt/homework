@@ -127,13 +127,13 @@ input:focus {
 
 @media (width > 992px) {
   .mb {
-    margin-bottom: 60px;
+    margin-bottom: 150px;
   }
 }
 
 @media (width <= 992px) {
   .mb {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 }
 
@@ -142,6 +142,7 @@ input:focus {
   font-weight: 400;
   color: #fff;
   border: 1px solid var(--border-color);
+  transition: outline var(--transition-time);
 }
 
 .actions__button-orange {
@@ -150,7 +151,9 @@ input:focus {
   color: #000;
   box-shadow: var(--button-accent-shadow);
   background: var(--button-accent-color);
-  transition: opacity var(--transition-time);
+  transition:
+    opacity var(--transition-time),
+    outline var(--transition-time);
 }
 
 @media (width > 992px) {
@@ -180,6 +183,24 @@ input:focus {
 
 .actions__button-orange:active {
   opacity: 0.5;
+}
+
+.actions__button-orange:hover {
+  outline: 2px solid var(--border-color);
+  outline-offset: 2px;
+}
+
+.actions__button-black:hover {
+  outline: 2px solid var(--border-color);
+}
+
+.actions__button-orange:focus {
+  outline: 2px solid var(--border-color);
+  outline-offset: 2px;
+}
+
+.actions__button-black:focus {
+  outline: 2px solid var(--border-color);
 }
 
 .img-wrapper {
