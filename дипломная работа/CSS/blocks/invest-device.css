@@ -72,6 +72,10 @@
   transition: opacity var(--transition-time);
 }
 
+.invest-device__app-download:focus-visible {
+  outline: 2px solid var(--border-color);
+}
+
 .invest-device__button-icon {
   padding: 5px;
 }

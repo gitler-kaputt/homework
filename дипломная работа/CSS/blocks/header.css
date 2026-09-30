@@ -4,6 +4,7 @@
   left: 0;
   right: 0;
   padding-block: 30px;
+  overflow-x: hidden;
   z-index: var(--layer-3);
   -webkit-transition: -webkit-box-shadow var(--transition-time);
   transition: -webkit-box-shadow var(--transition-time);
@@ -26,7 +27,7 @@
   justify-content: space-between;
 }
 
-.header__logo {
+.logo {
   margin-right: clamp(20px, -1.518rem + 4.46vw, 40px);
   flex-shrink: 0;
 }
@@ -151,7 +152,7 @@
 }
 
 @media (width <= 992px) {
-  .header__logo {
+  .logo {
     display: inline-flex;
   }
 
@@ -171,9 +172,9 @@
 }
 
 @media (width <= 480px) {
-  .header__logo {
+  .logo {
     width: 115px;
-    height: 51px;
+    height: auto;
     margin-block: 10px;
   }
 

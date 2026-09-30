@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.costumers-invest__title {
+  text-align: center;
+}
+
 @media (width > 992px) {
   .costumers-invest__title {
     margin-bottom: 50px;
@@ -36,9 +40,16 @@
     opacity var(--transition-time);
 }
 
-.costumers-invest__card:hover {
-  background: var(--main-color);
-  opacity: 0.8;
+.costumers-invest__btn:focus-visible {
+  outline: 2px solid var(--secondary-accent-color);
+  outline-offset: 4px;
+}
+
+@media (any-hover: hover) {
+  .costumers-invest__card:hover {
+    background: var(--main-color);
+    opacity: 0.8;
+  }
 }
 
 .costumers-invest__card-link {

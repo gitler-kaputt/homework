@@ -16,6 +16,10 @@
   font-size: 18px;
   line-height: 130%;
   color: var(--main-color);
+}
+
+.header__menu-item {
+  position: relative;
   transition:
     background var(--transition-time),
     -webkit-background-clip var(--transition-time),
@@ -24,22 +28,37 @@
     color var(--transition-time);
 }
 
-.menu__link-emoji {
-  position: relative;
-}
-
-.header__menu-item:hover::after {
-  content: "✨";
+.header__menu-item::after {
+  content: url("../../icons/sparkles.svg");
+  width: 20px;
+  height: 20px;
   position: absolute;
   right: -25px;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition:
+    opacity var(--transition-time),
+    transform var(--transition-time);
+}
+
+.header__menu-link:focus-visible {
+  outline: 2px solid var(--border-color);
+  outline-offset: 4px;
+  border-radius: 5px;
 }
 
 @media (any-hover: hover) {
-  .header__menu-item:hover {
+  .header__menu-item:hover,
+  .footer__number:hover {
     background: var(--accent-color);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
+  }
+
+  .header__menu-item:hover::after {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
