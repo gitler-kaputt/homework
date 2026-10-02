@@ -68,8 +68,56 @@
 
 .application__step {
   display: flex;
+  align-items: center;
   width: 100%;
   gap: 10px;
+}
+
+.application__step-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.step-one {
+  background: linear-gradient(
+    136.87deg,
+    #16373a 8.16%,
+    #0a1f24 31.4%,
+    #0b1b23 47.14%,
+    #122b31 87.5%
+  );
+}
+
+.step-two {
+  background: linear-gradient(321.99deg, #82c36d 2.26%, #25523e 92.51%);
+}
+
+.step-three {
+  background: linear-gradient(135.49deg, #76b467 11.3%, #295740 97.24%);
+}
+
+.step-img {
+  width: 35px;
+  height: 35px;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #111;
 }
 
 @media (width > 992px) {
@@ -79,27 +127,38 @@
     max-width: 300px;
   }
 
-  .step-img {
-    width: 100px;
-    height: auto;
+  .application__step-img {
+    width: 90px;
+    height: 90px;
   }
 }
 
 @media (width <= 992px) {
-  .step-img {
+  .application__step-img {
     width: 80px;
     height: 80px;
   }
 }
 
 @media (width <= 576px) {
-  .step-img {
-    width: 60px;
-    height: 60px;
-  }
-
   .application__subtitle {
     font-size: 10px;
+  }
+
+  .application__step-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .step-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .badge {
+    width: 20px;
+    height: 20px;
   }
 }
 
@@ -116,11 +175,6 @@
   .application__form-input {
     padding: 20px 40px;
   }
-
-  .application__button-orange {
-    font-size: 18px;
-    padding: 20px 40px;
-  }
 }
 
 .application__form-input {
@@ -135,10 +189,6 @@
   .application__form-input {
     padding: 20px 10px;
   }
-
-  .application__button-orange {
-    padding: 20px 40px;
-  }
 }
 
 .application__form-input:hover {
@@ -147,4 +197,9 @@
 
 .application__form-input:focus {
   outline: 2px solid var(--secondary-accent-color);
+}
+
+.application .btn {
+  padding: 20px 50px;
+  font-size: 18px;
 }

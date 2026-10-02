@@ -27,12 +27,13 @@
   gap: 24px;
 }
 
-.costumers-invest__card {
+.costumers-invest__card-link {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   height: 400px;
-  padding-inline: 20px 20px;
-  padding-block: 39px 30px;
+  padding-inline: 20px;
+  padding-block: 39px;
   background: var(--card-color);
   border-radius: 5px;
   transition:
@@ -46,18 +47,10 @@
 }
 
 @media (any-hover: hover) {
-  .costumers-invest__card:hover {
+  .costumers-invest__card-link:hover {
     background: var(--main-color);
     opacity: 0.8;
   }
-}
-
-.costumers-invest__card-link {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 230px;
-  transition: color var(--transition-time);
 }
 
 @media (width <= 768px) {
@@ -66,8 +59,12 @@
   }
 }
 
-.card-text-element-mt {
+.card-text-element-top {
   margin-top: 30px;
+}
+
+.card-text-element-bottom {
+  margin-top: 60px;
 }
 
 .costumers-invest__btn {
@@ -76,35 +73,33 @@
 
 .card-link,
 .costumers-invest__btn::after {
+  margin-left: auto;
   padding-top: 10px;
 }
 
-.costumers-invest__card:hover .card-text-element {
+.costumers-invest__card-link:hover .card-text-element {
   color: var(--bg-color);
 }
 
 .costumers-invest__icon {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   width: 30px;
   height: 30px;
 }
 
-.costumers-invest__btn {
-  display: flex;
-  justify-content: flex-end;
-  text-decoration: none;
+.card-link {
   color: var(--main-color);
   font-size: 15px;
   font-weight: 400;
   transition: opacity var(--transition-time);
 }
 
-.costumers-invest__btn:hover {
+.card-link:hover {
   opacity: 0.8;
 }
 
-.costumers-invest__btn::after {
-  content: " →";
+.card-link::after {
+  content: "→";
   text-decoration: none;
   display: inline-block;
   transition:
@@ -112,7 +107,7 @@
     color var(--transition-time);
 }
 
-.costumers-invest__card:hover .costumers-invest__btn::after {
+.costumers-invest__card-link:hover .card-link::after {
   transform: translateX(10px);
   color: var(--bg-color);
 }

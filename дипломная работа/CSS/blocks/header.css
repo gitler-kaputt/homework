@@ -36,7 +36,7 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 @media (width > 992px) {
@@ -49,9 +49,17 @@
   .header__controls {
     gap: 15px;
   }
+
+  .header .btn {
+    font-size: 15px;
+  }
 }
 
 @media (width <= 992px) {
+  .header {
+    padding-block: 15px;
+  }
+
   .header__menu,
   .lang-selector {
     position: fixed;
@@ -101,37 +109,25 @@
 
 @media (width > 1200px) {
   .header__menu-list {
-    gap: 60px;
+    gap: 40px;
   }
 
   .header__controls {
     gap: 30px;
   }
 
-  .actions__button-black {
+  .header .btn {
     padding: 15px 30px;
-    font-size: 18px;
-  }
-
-  .actions__button-orange {
-    padding: 15px 30px;
-    font-size: 18px;
   }
 }
 
 @media (width <= 1200px) {
   .header__menu-list {
-    gap: 50px;
+    gap: 40px;
   }
 
-  .actions__button-black-enter {
+  .header .btn {
     padding: 10px 20px;
-    font-size: 18px;
-  }
-
-  .actions__button-orange-open {
-    padding: 10px 20px;
-    font-size: 18px;
   }
 }
 
@@ -159,30 +155,24 @@
   .header__controls {
     gap: 10px;
   }
-
-  .actions__button-black-enter {
-    font-size: 15px;
-    padding: 10px 20px;
-  }
-
-  .actions__button-orange-open {
-    padding: 10px 20px;
-    font-size: 15px;
-  }
 }
 
-@media (width <= 480px) {
+@media (width <= 992px) {
   .logo {
     width: 115px;
     height: auto;
     margin-block: 10px;
   }
 
-  .actions__button-black-enter {
+  .header .btn {
     font-size: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
   }
+}
 
-  .actions__button-orange-open {
-    font-size: 10px;
+@media (width <= 576px) {
+  .header .btn {
+    padding: 10px 10px;
   }
 }

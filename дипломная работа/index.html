@@ -46,8 +46,8 @@
         </nav>
         </div>
         <div class="header__controls">
-          <button class="actions__button-black actions__button-black-enter">Войти</button>
-          <button class="actions__button-orange actions__button-orange-open">Открыть счёт</button>
+          <button class="btn btn--primary">Войти</button>
+          <button class="btn btn--secondary">Открыть счёт</button>
         </div>
       </div>
     </header>
@@ -76,12 +76,12 @@
           </div>
           <div class="hero__top-promotions-controls">
             <div class="hero__top-promotions-button-wrapper">
-              <img class="hero__top-promotions-overlay-icon" src="./icons/check-list.svg" width="110" height="110" alt="Чек лист топ акций">
-            <button class="actions__button-orange hero__top-promotions-button-download" >Скачать ТОП-5 акций</button>
+              <img class="hero__top-promotions-overlay-icon" src="./icons/check-list.svg" alt="Чек лист топ акций">
+            <button class="btn btn--secondary" >Скачать ТОП-5 акций</button>
             </div>
-            <button class="actions__button-black hero__top-promotions-button-open">Открыть счёт</button>
+            <button class="btn btn--primary">Открыть счёт</button>
           </div>
-          <div class="hero__top-promotions-users-wrapper">
+          <div class="hero__top-promotions-users-wrapper mb">
           <img class="hero__top-promotions-users-img" src="./icons/users.svg" width="152" height="70" alt="Около 100000 пользователей">
           <p class="hero__top-promotions-users-title">
             <span class="top">Сейчас инвестируют</span>
@@ -97,8 +97,8 @@
     </section>
     <section class="money__abilities">
       <div class="money__abilities-container">
-        <div class="money__abilities-title-container title-wrapper">
-          <h2 class="money__abilities-title title-md"><span class="line-break-after">Ваши деньги</span>способны на большее
+        <div class="title-wrapper">
+          <h2 class="title-md"><span class="line-break-after">Ваши деньги</span>способны на большее
 					</h2>
           <p class="subtitle">Сколько бы вы заработали, инвестируя <strong class="subtitle--accent">100 000 ₽</strong> год назад?</p>
         </div>
@@ -221,14 +221,14 @@
       </div>
       </в>
       <div class="catalog__container">
-      <p class="subtitle">И еще более 10 000 других ценных бумаг доступно <strong class="subtitle--accent">в каталоге</strong></p>
-      <button class="actions__button-orange actions__button-catalog">Получить каталог</button>
+      <p class="subtitle">И еще более 10 000 других ценных бумаг доступно в каталоге</p>
+      <button class="btn btn--secondary">Получить каталог</button>
       </div>
       </div>
     </section>
     <section class="tools">
       <div class="tools__title-wrapper">
-        <h3 class="tools__title title-md">Большой выбор инструментов</h3>
+        <h3 class="title-md">Большой выбор инструментов</h3>
       </div>
         <div class="container tools__article-wrapper">
           <article class="tools__card">
@@ -277,9 +277,9 @@
     </section>
     <section class="investment">
       <div class="container investment__container">
-        <div class="investment__title-wrapper title-wrapper">
-          <h2 class="investment__title title-md">Инвестиции доступные каждому</h2>
-          <p class="investment__subtitle subtitle"><span class="line-break-after">Простой сервис с подсказками и</span>поддержкой 24/7 на каждом этапе</p>
+        <div class="title-wrapper">
+          <h2 class="title-md">Инвестиции доступные каждому</h2>
+          <p class="subtitle"><span class="line-break-after">Простой сервис с подсказками и</span>поддержкой 24/7 на каждом этапе</p>
         </div>
         <div class="investment__articles-wrapper">
           <article class="investment__article" style="background-image: url('./icons/investment-numbers/1.svg');">
@@ -305,13 +305,13 @@
           <div class="gift gift--left"></div>
           <div class="gift gift--right"></div>
         </div>
-        <div class="bonus__title-wrapper title-wrapper">
+        <div class="title-wrapper">
           <img class="bonus__big-title" src="./icons/bonus.icons/bonus.svg" alt="бонус">
-          <h2 class="bonus__title title-md"><span class="line-break-after">Каждый достоин</span>второго шанса</h2>
-          <p class="bonus__subtitle subtitle"><span class="line-break-after">Купите свои первые акции без риска, мы вернем</span>вам 100$ на счет в случае проигрыша</p>
+          <h2 class="title-md"><span class="line-break-after">Каждый достоин</span>второго шанса</h2>
+          <p class="subtitle"><span class="line-break-after">Купите свои первые акции без риска, мы вернем</span>вам 100$ на счет в случае проигрыша</p>
           <div class="bonus__buttons-wrapper mb">
-            <button class="bonus__button-get actions__button-orange">Получить бонус</button>
-            <button class="bonus__button-open-demo-account actions__button-black">Открыть демо счет</button>
+            <button class="btn btn--secondary">Получить бонус</button>
+            <button class="btn btn--primary">Открыть демо счет</button>
           </div>
         </div>
     </section>
@@ -319,85 +319,69 @@
       <div class="container costumers-invest__container mb">
         <h2 class="costumers-invest__title title-md"><span class="line-break-after">100 000+ клиентов уже</span>инвестируют с нами</h2>
         <div class="container costumers-invest__cards-wrapper">
-          <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+          <a class="costumers-invest__card-link" href="#">
+          <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/europe.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">Представительство</span>компании в Европе</h3>
-             <p class="card-disc card-text-element card-text-element-mt">В разных странах мира компания открывает собственные представительства.</p>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
-           <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+             <p class="card-disc card-text-element card-text-element-top">В разных странах мира компания открывает собственные представительства.</p>
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
+          <a class="costumers-invest__card-link" href="#">
+           <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/funds.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">Мгновенный ввод</span>и вывод средств</h3>
-             <p class="card-disc card-text-element card-text-element-mt">0% комиссия с депозита</p>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
-          <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+             <p class="card-disc card-text-element card-text-element-top">0% комиссия с депозита</p>
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
+          <a class="costumers-invest__card-link" href="#">
+          <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/leverage.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">Кредитное плечо</span>до 1:1000</h3>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
-           <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
+          <a class="costumers-invest__card-link" href="#">
+           <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/time.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">Время выполнения</span>заказа - 30 мс</h3>
-             <p class="card-disc card-text-element card-text-element-mt">Средний показатель по отрасли - 500 мс</p>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
-          <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+             <p class="card-disc card-text-element card-text-element-top">Средний показатель по отрасли - 500 мс</p>
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
+          <a class="costumers-invest__card-link" href="#">
+          <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/trading-instruments.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">250 торговых</span> инструментов</h3>
-             <p class="card-disc card-text-element card-text-element-mt">Валютные пары, акции, металлы, индексы, облигации</p>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
-           <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+             <p class="card-disc card-text-element card-text-element-bottom">Валютные пары, акции, металлы, индексы, облигации</p>
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
+          <a class="costumers-invest__card-link" href="#">
+           <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/currency.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">Счета в евро, рублях,</span>долларах США</h3>
-             <p class="card-disc card-text-element">Пополните свой счет и сэкономьте на сборах за конвертацию</p>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
-          <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+             <p class="card-disc card-text-element card-text-element-bottom">Пополните свой счет и сэкономьте на сборах за конвертацию</p>
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
+          <a class="costumers-invest__card-link" href="#">
+          <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/bonus-15.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">15% бонус на</span> первый депозит</h3>
-             <p class="card-disc card-text-element card-text-element-mt">Может использоваться в торговле и во время просадки</p>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
-           <article class="costumers-invest__card">
-             <a class="costumers-invest__card-link" href="#">
+             <p class="card-disc card-text-element card-text-element-bottom">Может использоваться в торговле и во время просадки</p>
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
+          <a class="costumers-invest__card-link" href="#">
+           <div class="costumers-invest__card">
               <img class="costumers-invest__icon" src="./icons/costumers-invest/MTS.svg" alt="иконка планеты">
              <h3 class="title-xs card-text-element"><span class="line-break-after">Инновационная</span> <span class="line-break-after">торговая</span>платформа МТ5</h3>
-             <p class="card-disc card-text-element">Доступно на IOS и Android</p>
-             </a>
-             <a class="costumers-invest__btn" href="#">
-              <span class="card-link card-text-element" style="text-decoration: underline;">Подробнее </span>
-             </a>
-          </article>
+             <p class="card-disc card-text-element card-text-element-top">Доступно на IOS и Android</p>
+             </div>
+              <p class="card-link card-text-element" style="text-decoration: underline;">Подробнее </p>
+          </a>
         </div>
       </div>
     </section>
@@ -429,30 +413,30 @@
       </div>
       <div class="investment-portfolio__container">
         <div class="investment-portfolio__title-wrapper title-wrapper-aside">
-        <h2 class="investment-portfolio__title title-md">Подберите индивидуальный инвестиционный портфель</h2>
-        <p class="subtitle investment-portfolio__subtitle">Покупайте российские и иностранные акции, облигации, валюту и другие продукты в простом и удобном мобильном приложении для iOS и Android</p>
-        <button class="actions__button-orange">Получить портфель</button>
+        <h2 class="title-md">Подберите индивидуальный инвестиционный портфель</h2>
+        <p class="subtitle">Покупайте российские и иностранные акции, облигации, валюту и другие продукты в простом и удобном мобильном приложении для iOS и Android</p>
+        <button class="btn btn--secondary">Получить портфель</button>
         </div>
       </div>
       </div>
       <div class="investment-portfolio__list">
         <div class="title-wrapper">
-        <h3 class="investment-portfolio__list-title title-md">60 000</h3>
+        <h3 class="title-md">60 000</h3>
         <p class="subtitle">Активных инвесторов</p>
         </div>
         <div class="title-wrapper">
-        <h3 class="investment-portfolio__list-title title-md">150+</h3>
+        <h3 class="title-md">150+</h3>
         <p class="subtitle">Торговых инструментов</p>
         </div>
         <div class="title-wrapper">
-        <h3 class="investment-portfolio__list-title title-md">183 000 USD</h3>
+        <h3 class="title-md">183 000 USD</h3>
         <p class="subtitle">Финансовый результат одного из инвесторов</p>
         </div>
       </div>
     </section>
     <section class="invest-device">
       <div class="container invest-device-container">
-      <div class="title-wrapper-aside invest-device-title-wrapper">
+      <div class="title-wrapper-aside">
         <h2 class="title-md"><span class="line-break-after">Инвестируйте</span>с телефона</h2>
         <p class="subtitle">Покупайте российские и иностранные акции, облигации, валюту и другие продукты в простом и удобном мобильном приложении для iOS и Android.</p>
       </div>
@@ -460,14 +444,12 @@
       <img class="invest-device-img" src="./images/invest-device.webp" alt="Инвестируйте с любого устройства">
       </div>
       </div>
-    </section>
-    <section class="invest-device">
       <div class="container invest-device-container mb">
         <div class="img-wrapper">
       <img class="invest-device-img" src="./images/invest-iPhone-device.webp" alt="Инвестируйте с любого устройства">
       </div>
       <div class="invest-device__info-wrapper mb">
-      <div class="title-wrapper-aside invest-device-title-wrapper">
+      <div class="title-wrapper-aside">
         <h2 class="title-md"><span class="line-break-after">Инвестируйте</span>с телефона</h2>
         <p class="subtitle">Покупайте российские и иностранные акции, облигации, валюту и другие продукты в простом и удобном мобильном приложении для iOS и Android.</p>
       </div>
@@ -484,16 +466,16 @@
       </div>
       </div>
     </section>
-    <section class="leader-classic__faq">
-      <div class="container leader-classic__faq-container mb">
-      <div class="leader-classic__faq-info-wrapper">
-      <div class="leader-classic__faq-title">
+    <section class="lC__faq">
+      <div class="container lC__faq-container mb">
+      <div class="lC__faq-info-wrapper">
+      <div class="title-wrapper-aside">
         <h2 class="title-md"><span class="line-break-after">Мне только</span>спросить</h2>
         <p class="subtitle">Собрали в подсказках ответы на популярные вопросы об инвестициях и сервисе</p>
         </div>
-        <button class="leader-classic__faq-button actions__button-orange">Получить консультацию</button>
+        <button class="btn btn--secondary">Получить консультацию</button>
       </div>
-      <div class="leader-classic__faq-wrapper">
+      <div class="lC__faq-wrapper">
 						<details class="faq" name="faq">
 							<summary class="faq__question">
 								Есть ли плата за обслуживание?
@@ -555,10 +537,13 @@
     </section>
     <section class="application">
       <div class="container application__container mb">
-        <h2 class="application__title title-md">Оставьте заявку на открытие счёта</h2>
+        <h2 class="title-md">Оставьте заявку на открытие счёта</h2>
         <div class="application__steps-wrapper">
           <div class="application__step">
-            <img class="step-img" src="./icons/application-steps.icons/step-1.svg" alt="звполнить анкету онлайн">
+            <div class="application__step-img step-one">
+              <img class="step-img" src="./icons/application-steps.icons/step-1.svg" alt="заполните заявку онлайн">
+              <span class="badge">1</span>
+            </div>
             <div class="application__step-title-wrapper">
             <h3 class="title-xs"><span class="line-break-after">Заполните заявку</span>онлайн</h3>
             <p class="application__subtitle card-disc">Необходимо: имя, номер телефона, e-mail и пароль для входа.</p>
@@ -566,7 +551,10 @@
           </div>
           <img class="application__arrow-1-2" src="./icons/application-steps.icons/step-arrow.svg" alt="стрелка которая указывает на следущий шаг">
           <div class="application__step">
-            <img class="step-img" src="./icons/application-steps.icons/step-2.svg" alt="звполнить анкету онлайн">
+            <div class="application__step-img step-two">
+              <img class="step-img" src="./icons/application-steps.icons/step-2.svg" alt="откроем счет за 5 минут">
+              <span class="badge">2</span>
+            </div>
             <div class="application__step-title-wrapper">
             <h3 class="title-xs"><span class="line-break-after">Откроем счет</span>за 5 минут</h3>
             <p class="application__subtitle card-disc">Вы можете использовать несколько платежных систем для пополнения депозита, включая систему MidexPay и кошелек Bitcoin.</p>
@@ -574,7 +562,10 @@
           </div>
            <img class="application__arrow-2-3" src="./icons/application-steps.icons/step-arrow.svg" alt="стрелка которая указывает на следущий шаг">
           <div class="application__step">
-            <img class="step-img" src="./icons/application-steps.icons/step-3.svg" alt="звполнить анкету онлайн">
+           <div class="application__step-img step-three">
+              <img class="step-img" src="./icons/application-steps.icons/step-3.svg" alt="Пополните счёт и начните инвестировать">
+              <span class="badge">3</span>
+            </div>
             <div class="application__step-title-wrapper">
             <h3 class="title-xs"><span class="line-break-after">Пополните счёт</span>и начните инвестировать</h3>
             <p class="application__subtitle card-disc">Сразу после пополнения депозита будет доступна торговля через веб-терминал или мобильную платформу.</p>
@@ -585,7 +576,7 @@
           <input type="text" class="application__form-input" placeholder="Ваше имя">
           <input type="tel" class="application__form-input" placeholder="+7 --- --- -- --">
           <input type="email" class="application__form-input" placeholder="Email">
-          <button type="submit" class="application__button-orange actions__button-orange">Оставить заявку</button>
+          <button type="submit" class="btn btn--secondary">Оставить заявку</button>
         </div>
       </div>
     </section>
@@ -610,12 +601,12 @@
             <img src="./icons/social.media.icons/YouTube.svg" width="30" height="30" alt="иконка ютуба">
           </a>
         </div>
-        <p class="footer__subtitle card-disc">Политика передачи данных</p>
+        <p class="card-disc">Политика передачи данных</p>
         </div>
         <div class="footer__call-container">
           <p class="card-disc">Звонок по России бесплатный</p>
           <a class="footer__number" href="tel:+74952121671">8 (495) 212-16-71</a>
-          <button class="actions__button-orange">Перезвоните мне</button>
+          <button class="btn btn--secondary">Перезвоните мне</button>
         </div>
       </div>
     </footer>

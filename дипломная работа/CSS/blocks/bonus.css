@@ -189,3 +189,9 @@
   display: flex;
   gap: 20px;
 }
+
+@media (width > 992px) {
+  .bonus .btn {
+    padding-inline: 80px;
+  }
+}

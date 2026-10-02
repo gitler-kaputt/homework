@@ -122,14 +122,12 @@
 @media (width <= 992px) {
   .promo__bar-title-main {
     font-weight: 400;
-    font-size: 17px;
-    margin-top: 5px;
-    margin-bottom: 0px;
+    font-size: 16px;
   }
 
   .promo__bar-title-second {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     max-width: 800px;
     margin-right: 20px;
   }
@@ -143,13 +141,13 @@
 
   .promo__bar-title-main {
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     margin-bottom: 0px;
   }
 
   .promo__bar-title-second {
     font-weight: 500;
-    font-size: 10px;
+    font-size: 11px;
     max-width: 330px;
     margin-right: 20px;
   }
