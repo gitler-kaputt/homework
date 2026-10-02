@@ -116,24 +116,15 @@
 
 @media (width <= 992px) {
   .hero__top-promotions-arrow {
-    width: 30px;
-    height: 120px;
+    width: 35px;
+    height: auto;
     left: -40px;
   }
 }
 
 @media (width <= 768px) {
   .hero__top-promotions-arrow {
-    width: 27px;
-    height: 100px;
-    left: -40px;
-  }
-}
-
-@media (width <= 576px) {
-  .hero__top-promotions-arrow {
-    width: 21px;
-    height: 80px;
+    width: 25px;
     left: -40px;
   }
 }
@@ -142,7 +133,6 @@
   .hero__top-promotions-title {
     font-size: 50px;
     line-height: 117%;
-    justify-content: center;
   }
 
   .hero__top-promotions-list {
@@ -246,6 +236,7 @@
 .hero__top-promotions-users-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
   gap: 12px;
 }
 
@@ -336,7 +327,7 @@
 
 @media (width <= 1580px) {
   .hero__top-promotions-wooden-hand-wrapper {
-    top: 500px;
+    top: 550px;
     right: 10%;
   }
 }
@@ -372,5 +363,11 @@
   .hero__top-promotions-img-wooden-hand {
     width: 400px;
     height: 400px;
+  }
+}
+
+@media (width <= 380px) {
+  .hero__top-promotions-wooden-hand-wrapper {
+    top: 450px;
   }
 }

@@ -15,6 +15,14 @@
   overflow-x: hidden;
 }
 
+@media (width <= 576px) {
+  .page__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
 .page-body--no-scroll {
   overflow-y: hidden;
 }
