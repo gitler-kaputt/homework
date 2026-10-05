@@ -42,6 +42,22 @@
   gap: 20px;
 }
 
+.social-media-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  background-color: var(--border-color-form);
+  border-radius: 50%;
+  color: var(--card-color);
+  transition: color var(--transition-time);
+}
+
+.social-media-icon:hover {
+  color: var(--border-color);
+}
+
 .social-media-icon:focus-visible,
 .logo:focus-visible,
 .footer__number:focus-visible {
@@ -72,7 +88,11 @@
   color: var(--main-color);
   text-decoration: none;
   font-size: 20px;
-  transition: background var(--transition-time);
+  transition: color var(--transition-time);
+}
+
+.footer__number:hover {
+  color: var(--border-color);
 }
 
 @media (width > 1200px) {

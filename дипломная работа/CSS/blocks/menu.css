@@ -40,8 +40,7 @@
 }
 
 @media (any-hover: hover) {
-  .header__menu-item:hover,
-  .footer__number:hover {
+  .header__menu-item:hover {
     background: var(--accent-color);
     -webkit-background-clip: text;
     background-clip: text;

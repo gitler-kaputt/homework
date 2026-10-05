@@ -202,4 +202,5 @@
 .application .btn {
   padding: 20px 50px;
   font-size: 18px;
+  z-index: var(--layer-2);
 }

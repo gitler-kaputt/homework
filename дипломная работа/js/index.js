@@ -1,7 +1,8 @@
 import HeaderFixed from "./header.js";
 import BurgerMenu from "./burger.js";
 import { countDownDate } from "./timer.js";
-import { moneyAbilitiesSlider } from "./money-abilities-slider.js";
+import { initSlider } from "./money-abilities-animate.js";
+import { updateGauge } from "./investment-portfolio.js";
 
 try {
   const headerFixed = new HeaderFixed({
@@ -28,8 +29,20 @@ try {
     headerFixed,
   );
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const element = document.getElementById("phone");
+    if (element) {
+      const mask = IMask(element, {
+        mask: "+7 (000) 000-00-00",
+      });
+      mask();
+    }
+  });
+
   countDownDate();
   moneyAbilitiesSlider();
+  initSlider();
+  updateGauge();
 } catch (error) {
   console.error(error);
 }
