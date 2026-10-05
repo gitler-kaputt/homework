@@ -51,7 +51,7 @@
   line-height: 130%;
   color: var(--secondary-accent-color);
   text-align: center;
-  margin-bottom: 5px;
+  margin-block: 5px;
 }
 
 .income-investment {
